@@ -1,0 +1,25 @@
+#around-triple-zone path:hover,
+#around-center-zone path:hover,
+#center-zone path:hover {
+  fill: rgba(13, 254, 174, 0.718);
+}
+
+#double-zone path:hover,
+#triple-zone path:hover,
+#center-zone circle:hover {
+  fill: rgba(254, 13, 13, 0.718);
+}
+
+#around-triple-zone,
+#around-center-zone,
+#center-zone,
+#double-zone,
+#triple-zone,
+#center-zone {
+  cursor: pointer;
+}
+
+svg {
+  height: 80vh;
+  width: 100vw;
+}

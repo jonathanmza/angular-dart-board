@@ -1,0 +1,44 @@
+div {
+  position: absolute;
+  visibility: hidden;
+  width: 100px;
+  height: 100px;
+  font-size: 1.1rem;
+  color: white;
+  user-select: none;
+  font-weight: bold;
+}
+
+div.show {
+  visibility: visible;
+  animation: fadeIn 250ms;
+}
+
+div.hide {
+  animation: fadeOut 450ms;
+}
+
+.text-shadow {
+  font-family: Sans-Serif;
+  text-shadow: 1px 1px 12px rgb(0, 224, 249), 1px 1px 13px rgb(0, 224, 249), 1px 1px 14px rgb(0, 224, 249);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
